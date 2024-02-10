@@ -80,8 +80,8 @@ public class LoanCalc {
 	*/
 	private static double endBalance(double loan, double rate, int n, double payment) {
 		double monthly_Rate = ((rate / 100) / 12) ; 
-		for (int i = 0; i < n; i++){
-			loan = (loan - payment) * ( monthly_Rate);
+		for (int i = 1; i < n; i++){
+			loan = (loan - payment) * ( 1 + monthly_Rate);
 		}
     	return loan;
     	
