@@ -3,7 +3,7 @@ public class LowerCase {
     public static void main(String[] args) {  
         String str = args[0];
         System.out.println(lowerCase(str));
-    }
+     }
 
    /**
     * Returns a string which is identical to the original string, 
@@ -11,7 +11,16 @@ public class LowerCase {
     * Non-letter characters are left as is.
     */
     public static String lowerCase(String s) {
-        // Replace the following statement with your code
-        return null;
+        String ans = "";
+       for (int i = 0; i < s.length(); i++) {
+        char ch = s.charAt(i);
+        if (ch >= 'A' && ch <= 'Z') { 
+            ch = (char)(ch + 32);
+        }
+        ans += ch;
+        
+       }
+       
+        return ans;
     }
 }
