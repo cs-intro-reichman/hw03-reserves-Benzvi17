@@ -12,7 +12,7 @@ public class Calendar0 {
 	}
 		 
 	// Tests the isLeapYear function.
-	private static void isLeapYearTest(int year) {
+	public static void isLeapYearTest(int year) {
 		String commonOrLeap = "common";
 		if (isLeapYear(year)) {
 			commonOrLeap = "leap";
@@ -21,7 +21,7 @@ public class Calendar0 {
 	}
 
 	// Tests the nDaysInMonth function.
-	private static void nDaysInMonthTest(int year) {
+	public static void nDaysInMonthTest(int year) {
 		for (int month = 1; month <= 12; month++) {
 			System.out.println("Month " + month + " has " + nDaysInMonth(month, year) + " days");
 		}

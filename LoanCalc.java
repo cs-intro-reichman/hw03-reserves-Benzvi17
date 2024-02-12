@@ -78,7 +78,7 @@ public class LoanCalc {
 	* Computes the ending balance of a loan, given the sum of the loan, the periodical
 	* interest rate (as a percentage), the number of periods (n), and the periodical payment.
 	*/
-	private static double endBalance(double loan, double rate, int n, double payment) {
+	public static double endBalance(double loan, double rate, int n, double payment) {
 		double annual_Rate = (rate / 100) ; 
 		for (int i = 0; i < n; i++){
 			loan = (loan - payment) * ( 1 + annual_Rate);

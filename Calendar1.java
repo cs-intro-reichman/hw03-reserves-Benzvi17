@@ -13,7 +13,7 @@ public class Calendar1{
 	public static void main(String args[]) {
 		int Debug_limit = Integer.parseInt(args[0]);
 	    int debugDaysCounter = 0; 
-	 
+		
 	 	while (year < 2000) {		
 	 		if(debugDaysCounter >= Debug_limit) {
 				break;
@@ -30,7 +30,7 @@ public class Calendar1{
 	}
 	 	
 	
-	 private static void advance() {	
+	 public static void advance() {	
 		dayOfWeek++;
 		if (dayOfWeek > 7) {
 			dayOfWeek = 1;
@@ -50,12 +50,12 @@ public class Calendar1{
 		
 	}  
     // Returns true if the given year is a leap year, false otherwise.
-	private static boolean isLeapYear(int year) {
+	public static boolean isLeapYear(int year) {
 		return (year % 400) == 0|| ((year % 4) == 0) && ((year % 100) != 0 );
 	}
 	 
 	
-	private static int nDaysInMonth(int month, int year) {
+	public static int nDaysInMonth(int month, int year) {
 		switch (month) {
 			case 4:
 			case 6: 

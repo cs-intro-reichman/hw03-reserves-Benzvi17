@@ -25,7 +25,7 @@ public class Calendar{
 	}
 	 	
 	
-	 private static void advance() {	
+	 public static void advance() {	
 		dayOfWeek++;
 		if (dayOfWeek > 7) {
 			dayOfWeek = 1;
@@ -44,12 +44,12 @@ public class Calendar{
 		
 	}  
     // Returns true if the given year is a leap year, false otherwise.
-	private static boolean isLeapYear(int year) {
+	public static boolean isLeapYear(int year) {
 		return (year % 400) == 0|| ((year % 4) == 0) && ((year % 100) != 0 );
 	}
 	 
 	
-	private static int nDaysInMonth(int month, int year) {
+	public static int nDaysInMonth(int month, int year) {
 		switch (month) {
 			case 4:
 			case 6: 
